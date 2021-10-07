@@ -1,0 +1,9 @@
+.galleryWrapper {
+    width: 100%;
+    min-height: 540px;
+    padding: 100px 0;
+    background: url(./galleryBackground.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
