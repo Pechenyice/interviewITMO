@@ -1,0 +1,59 @@
+.headerWrapper {
+	position: relative;
+	width: 100%;
+}
+
+.headerAside {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 40px;
+	height: 40px;
+	background: linear-gradient(90deg, #3951e7 20.77%, #832ab9 91.64%);
+	color: var(--light);
+}
+
+.langWrapper {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.lang {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.navWrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 40px;
+	height: 88px;
+	color: var(--dark);
+}
+
+.navName {
+	display: flex;
+	gap: 16px;
+    align-items: center;
+}
+
+.navNameText {
+    font-family: "Muller Normal";
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 28px;
+}
+
+.navContent {
+    display: flex;
+    gap: 40px;
+}
+
+.navElem {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
