@@ -1,0 +1,194 @@
+.modalMain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    overflow: auto;
+}
+
+.modalWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(35, 36, 115, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalContent {
+    position: relative;
+    padding: 80px;
+    background: var(--light);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+}
+
+.closer {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+.modalHeader {
+    text-align: center;
+}
+
+.modalInner {
+    margin-top: 72px;
+    width: 385px;
+}
+
+.inputWrapper {
+    position: relative;
+    margin-bottom: 56px;
+}
+
+.inputWrapper:last-child {
+    margin-bottom: 0px;
+}
+
+.inputLabel {
+    position: absolute;
+    top: -32px;
+    left: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #222;
+}
+
+.inputSpan {
+    color: #F21F5B;
+}
+
+.input {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #D4D6D7;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 10px 16px;
+    transition: .2s;
+}
+
+.input:focus {
+    border: 1px solid #3951E3;
+    transition: .2s;
+}
+
+.area {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    resize: none;
+    height: 96px;
+}
+
+.modalHint {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    width: 385px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #222;
+}
+
+.modalHintAccent {
+    color: #3951E3;
+    cursor: pointer;
+}
+
+.buttonOuter {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3951E7;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    padding: 13px 24px;
+    margin: auto;
+    transition: .2s;
+}
+
+.buttonOuter:hover {
+    transition: .2s;
+    background: var(--accent);
+}
+
+.buttonInner {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    color: var(--light);
+}
+
+.buttonOuter p{
+    font-family: "Open Sans Normal";
+    margin-left: 12px;
+    color: var(--light);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.errorInputWrapper {
+    border-radius: 2px;
+    border: 1px solid red;
+}
+
+.inputErrorText {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    font-size: 12px;
+    line-height: 12px;
+    color: red;
+}
+
+.validationWrapper {
+    z-index: 12;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    pointer-events: none;
+}
+
+.validation {
+    width: 100%;
+    padding: 24px;
+    background: rgb(19, 146, 57);
+    color: var(--light);
+    font-size: 16px;
+    line-height: 16px;
+}
+
+@media screen and (max-width: 567px) {
+    .modalContent {
+        padding: 80px 24px;
+    }
+
+    .modalInner {
+        margin-left: auto;
+        margin-right: auto;
+        width: 264px;
+    }
+
+    .modalHint {
+        margin-left: auto;
+        margin-right: auto;
+        width: 264px;
+    }
+}
