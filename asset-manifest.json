@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/interviewITMO/static/css/main.a401c376.chunk.css",
-    "main.js": "/interviewITMO/static/js/main.4d115331.chunk.js",
-    "main.js.map": "/interviewITMO/static/js/main.4d115331.chunk.js.map",
+    "main.js": "/interviewITMO/static/js/main.ab223d07.chunk.js",
+    "main.js.map": "/interviewITMO/static/js/main.ab223d07.chunk.js.map",
     "runtime-main.js": "/interviewITMO/static/js/runtime-main.2df06692.js",
     "runtime-main.js.map": "/interviewITMO/static/js/runtime-main.2df06692.js.map",
     "static/js/2.85494024.chunk.js": "/interviewITMO/static/js/2.85494024.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.2df06692.js",
     "static/js/2.85494024.chunk.js",
     "static/css/main.a401c376.chunk.css",
-    "static/js/main.4d115331.chunk.js"
+    "static/js/main.ab223d07.chunk.js"
   ]
 }
