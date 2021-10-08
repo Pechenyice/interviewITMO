@@ -22,10 +22,62 @@ code {
     monospace;
 }
 
+a {
+  text-decoration: none;
+  color: unset;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Muller Normal";
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+  color: #222;
+}
+
+input {
+  font-family: "Open Sans Normal";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #C1C3C4;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  font-family: "Open Sans Normal";
+}
+
+textarea {
+  font-family: "Open Sans Normal";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  outline: none;
+}
+
+textarea::placeholder {
+  color: #C1C3C4;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  font-family: "Open Sans Normal";
+}
+
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 /* varibles */
@@ -34,4 +86,66 @@ code {
   --light: #fff;
   --dark: #222;
   --accent: #F21F5B;
+}
+
+/* animations */
+
+.slideAnimation-enter {
+  opacity: 0;
+}
+.slideAnimation-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.slideAnimation-exit {
+  opacity: 1;
+}
+.slideAnimation-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.modal-enter {
+  opacity: 0;
+}
+.modal-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.modal-exit {
+  opacity: 1;
+}
+.modal-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.validation-enter {
+  opacity: 0;
+}
+.validation-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.validation-exit {
+  opacity: 1;
+}
+.validation-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.nav-enter {
+  opacity: 0;
+}
+.nav-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.nav-exit {
+  opacity: 1;
+}
+.nav-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
 }
