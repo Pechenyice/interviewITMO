@@ -1,0 +1,140 @@
+.footerMainWrapper {
+    width: 100%;
+    background: #232473;
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
+
+.footerAsideWrapper {
+    width: 100%;
+    background: #1A1B57;
+    padding: 10px 0;
+}
+
+.footerAsideContent {
+    width: 1216px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerAsideContent p {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.507px;
+    opacity: .5;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.footerMain {
+    width: 1216px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerUnderLogo:first-child {
+    margin-top: 0px;
+}
+
+.footerUnderLogo {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    margin-top: 24px;
+    color: var(--light);
+    opacity: .5;
+    letter-spacing: -0.507px;
+}
+
+.footerBlock {
+    width: 280px;
+}
+
+.footerblocksWrapper {
+    display: flex;
+    gap: 32px;
+}
+
+.footerBlockLittle {
+    width: 176px;
+}
+
+.footerBlockLittle p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--light);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footerLinks {
+    margin-top: 24px;
+}
+
+.footerLinks p {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.507px;
+    color: #FFFFFF;
+}
+
+.footerSocial {
+    display: flex;
+    margin-top: 8px;
+    gap: 8px;
+}
+
+.footerLogoContainer {
+    cursor: pointer;
+}
+
+.footerSocial svg {
+    border-radius: 50%;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.footerSocial svg:hover{
+    box-shadow: 0 0 5px #3951E7;
+    transition: .2s;
+}
+
+@media screen and (max-width: 1400px) {
+    .footerMain {
+        width: 767px;
+        flex-wrap: wrap;
+        row-gap: 32px;
+    }
+
+    .footerblocksWrapper {
+        order: 3;
+    }
+
+    .footerAsideContent {
+        width: 767px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footerMain {
+        width: 312px;
+        flex-wrap: wrap;
+        row-gap: 32px;
+    }
+
+    .footerblocksWrapper {
+        order: unset;
+        flex-wrap: wrap;
+    }
+
+    .footerAsideContent {
+        width: 312px;
+        flex-wrap: wrap;
+        row-gap: 24px;
+    }
+}
